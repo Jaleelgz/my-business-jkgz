@@ -19,9 +19,10 @@ const Home = () => {
         <span>
           <Link
             to="services"
+            activeClass={styles.active}
             spy={true}
             smooth={true}
-            offset={-75}
+            offset={-100}
             duration={500}
           >
             Services
@@ -30,9 +31,10 @@ const Home = () => {
         <span>
           <Link
             to="about"
+            activeClass={styles.active}
             spy={true}
             smooth={true}
-            offset={-75}
+            offset={-100}
             duration={500}
           >
             About us
@@ -41,9 +43,10 @@ const Home = () => {
         <span>
           <Link
             to="blogs"
+            activeClass={styles.active}
             spy={true}
             smooth={true}
-            offset={-75}
+            offset={-100}
             duration={500}
           >
             Updates
@@ -52,9 +55,10 @@ const Home = () => {
         <span>
           <Link
             to="staffs"
+            activeClass={styles.active}
             spy={true}
             smooth={true}
-            offset={-75}
+            offset={-100}
             duration={500}
           >
             Staffs
@@ -63,9 +67,10 @@ const Home = () => {
         <span>
           <Link
             to="gallery"
+            activeClass={styles.active}
             spy={true}
             smooth={true}
-            offset={-75}
+            offset={-100}
             duration={500}
           >
             Gallery
