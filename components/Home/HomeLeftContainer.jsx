@@ -6,7 +6,10 @@ function HomeLeftContainer() {
   return (
     <div className={styles.leftContainer}>
       {/* service container */}
-      <div className={`${styles.serviceContainer} componentContainer`}>
+      <div
+        className={`${styles.serviceContainer} componentContainer`}
+        id="services"
+      >
         <p className={styles.ourSrviceTxt}>Our services</p>
         <p className={styles.selectServTxt}>Select your service</p>
         <div className={styles.accordionContainer}>
@@ -36,7 +39,10 @@ function HomeLeftContainer() {
       </div>
 
       {/* About Us */}
-      <div className={`${styles.aboutUsContainer} componentContainer`}>
+      <div
+        className={`${styles.aboutUsContainer} componentContainer`}
+        id="about"
+      >
         <p className={styles.ourSrviceTxt}>About Us</p>
         <p className={styles.welcomeTxt}>Welcome to Ozan</p>
         <p className={styles.description}>
@@ -47,7 +53,7 @@ function HomeLeftContainer() {
       </div>
 
       {/* Blogs */}
-      <div className={`${styles.blogsContainer} componentContainer`}>
+      <div className={`${styles.blogsContainer} componentContainer`} id="blogs">
         <div className={styles.headContainer}>
           <p className={styles.ourSrviceTxt}>Blogs</p>
           <p className={styles.latestNewsTxt}>Latest news and offers</p>
@@ -68,7 +74,10 @@ function HomeLeftContainer() {
       </div>
 
       {/* Our staffs */}
-      <div className={`${styles.ourStaffsContainer} componentContainer`}>
+      <div
+        className={`${styles.ourStaffsContainer} componentContainer`}
+        id="staffs"
+      >
         <p className={styles.ourSrviceTxt}>Our staffs</p>
         {/* <p className={styles.welcomeTxt}>Welcome to Ozan</p> */}
         <div className={styles.staffsCardContainer}>
@@ -87,7 +96,10 @@ function HomeLeftContainer() {
       </div>
 
       {/* PortFolio */}
-      <div className={`${styles.portFolioContainer} componentContainer`}>
+      <div
+        className={`${styles.portFolioContainer} componentContainer`}
+        id="gallery"
+      >
         <p className={styles.ourSrviceTxt}>Portfolio</p>
         {/* <p className={styles.welcomeTxt}>Welcome to Ozan</p> */}
         <div className={styles.imageParentContainer}>
