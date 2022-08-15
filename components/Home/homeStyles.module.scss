@@ -1,0 +1,463 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@100;200;400;700&family=Poppins:wght@500&display=swap");
+
+.homeContainer {
+  padding: 0px;
+  margin: 0px;
+  width: 100%;
+  min-height: calc(100vh - 100px);
+}
+
+.bannerImage {
+  width: 100%;
+  object-fit: cover;
+  max-height: 200px !important;
+}
+
+.bannerContainer {
+  background-color: #fff;
+  min-height: 70px;
+  padding: 10px 3rem;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  border-bottom: #f2f2f2 solid 1px;
+  position: sticky;
+  top: 0px;
+  z-index: 100px;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 0px 8px;
+
+  span {
+    margin: 0px auto;
+    padding: 5px 10px;
+    cursor: pointer;
+    font-size: clamp(15px, 1.32vw, 20px);
+    font-family: "Poppins", sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    // font-size: 22px;
+    line-height: 33px;
+    text-align: center;
+    color: #000000;
+    &:hover {
+      border-bottom: #000000 solid 2px;
+      //   border-radius: 5px;
+    }
+  }
+}
+
+// Layout
+.layoutContainer {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 3rem;
+  padding: clamp(10px, 5vw, 4rem);
+  max-width: 1512px;
+  margin: auto;
+
+  .layoutLeft {
+    flex: 3;
+    overflow: auto;
+    padding: 2px;
+
+    @media screen and (min-width: 350px) {
+      min-width: 300px;
+    }
+  }
+  .layoutRight {
+    flex: 2;
+    padding: 2px;
+  }
+}
+
+// leftContainer
+.leftContainer {
+  width: 100%;
+  min-height: 200vh;
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+
+  .serviceContainer {
+    .ourSrviceTxt {
+      font-family: "Inter", sans-serif;
+      font-style: normal;
+      font-weight: 700;
+      font-size: clamp(22.5px, 1.98vw, 30px);
+      line-height: 22px;
+      letter-spacing: -0.408px;
+      color: #000000;
+    }
+    .selectServTxt {
+      margin-top: 10px;
+      font-family: "Inter", sans-serif;
+      font-style: normal;
+      font-weight: 500;
+      font-size: clamp(13.5px, 1.19vw, 18px);
+      line-height: 22px;
+      letter-spacing: -0.408px;
+      color: #000000;
+    }
+
+    .accordionContainer {
+      margin-top: 30px;
+    }
+
+    .accordionHead {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      background-color: #f2f2f2;
+      padding: 13px 5px;
+    }
+    .categoryName {
+      font-family: "Inter", sans-serif;
+      font-style: normal;
+      font-weight: 400;
+      font-size: clamp(21px, 1.85vw, 28px);
+      line-height: 18px;
+      letter-spacing: -0.078px;
+      text-transform: uppercase;
+      color: #333333;
+    }
+    .serviceItemContainer {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 1rem;
+      flex-wrap: wrap;
+      border-bottom: 1px solid #f2f2f2;
+      padding: 2rem 10px;
+
+      .serviceImg {
+        height: clamp(63.75px, 5.29vw, 85px);
+        object-fit: contain;
+        border-radius: 5px;
+      }
+      .serviceTxtContainer {
+        flex: 1;
+        min-width: 150px;
+
+        .serviceNameTxt {
+          font-family: "Inter", sans-serif;
+          font-style: normal;
+          font-weight: 600;
+          font-size: clamp(15px, 1.32vw, 20px);
+          line-height: 22px;
+          letter-spacing: 1px;
+          color: #000000;
+        }
+        .serviceDuration {
+          font-family: "Inter", sans-serif;
+          font-style: normal;
+          font-weight: 400;
+          font-size: clamp(11.25px, 1vw, 15px);
+          line-height: 22px;
+          letter-spacing: -0.408px;
+          color: #000000;
+        }
+        .serviceDescription {
+          font-family: "Inter", sans-serif;
+          font-style: normal;
+          font-weight: 200;
+          font-size: clamp(11.25px, 1vw, 15px);
+          line-height: 22px;
+          letter-spacing: -0.408px;
+          color: #000000;
+        }
+      }
+
+      button {
+        padding: 7px 15px;
+        background: #102b5c;
+        border: 1px solid rgba(16, 43, 92, 0.2);
+        border-radius: 10px;
+        font-family: "Inter", sans-serif;
+        font-style: normal;
+        font-weight: 600;
+        font-size: clamp(13.5px, 1.19vw, 18px);
+        line-height: 22px;
+        letter-spacing: -0.408px;
+        color: #ffffff;
+      }
+    }
+  }
+
+  //   About Us
+  .aboutUsContainer {
+    .ourSrviceTxt {
+      font-family: "Inter", sans-serif;
+      font-style: normal;
+      font-weight: 700;
+      font-size: clamp(22.5px, 1.98vw, 30px);
+      line-height: 22px;
+      letter-spacing: -0.408px;
+      color: #000000;
+    }
+    .welcomeTxt {
+      margin-top: 20px;
+      font-family: "Inter", sans-serif;
+      font-style: normal;
+      font-weight: 600;
+      font-size: clamp(14.25px, 1.25vw, 19px);
+      line-height: 32px;
+      font-feature-settings: "liga" off;
+      color: #18191f;
+    }
+    .description {
+      font-family: "Inter", sans-serif;
+      font-style: normal;
+      font-weight: "normal";
+      font-size: clamp(14.25px, 1.25vw, 19px);
+      line-height: 32px;
+      font-feature-settings: "liga" off;
+      color: #18191f;
+    }
+  }
+
+  //   Blogs
+  .blogsContainer {
+    .headContainer {
+      display: flex;
+      align-items: baseline;
+      justify-content: center;
+      flex-wrap: wrap;
+      gap: 20px;
+
+      .ourSrviceTxt {
+        font-family: "Inter", sans-serif;
+        font-style: normal;
+        font-weight: 700;
+        font-size: clamp(22.5px, 1.98vw, 30px);
+        line-height: 22px;
+        letter-spacing: -0.408px;
+        color: #000000;
+        flex: 1;
+      }
+      .latestNewsTxt {
+        font-family: "Inter", sans-serif;
+        font-style: normal;
+        font-weight: 500;
+        font-size: clamp(13.5px, 1.19vw, 18px);
+        line-height: 22px;
+        letter-spacing: -0.408px;
+        color: #000000;
+      }
+    }
+
+    .blogItemContainer {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-wrap: wrap;
+      gap: 20px;
+
+      padding: 2rem 0px;
+      border-bottom: 1px solid #f2f2f2;
+
+      .blogImg {
+        height: clamp(86.25px, 7.6vw, 115px);
+        border-radius: 5px;
+        object-fit: contain;
+      }
+      .blogTxtContainer {
+        flex: 1;
+        min-width: 150px;
+
+        .blogNameTxt {
+          font-family: "Inter", sans-serif;
+          font-style: normal;
+          font-weight: 900;
+          font-size: clamp(18px, 1.25vw, 24px);
+          line-height: 29px;
+          color: #202020;
+          margin-bottom: 10px;
+        }
+        .blogDescription {
+          font-family: "Source Sans Pro", sans-serif;
+          font-style: normal;
+          font-weight: 400;
+          font-size: clamp(13.5px, 1.19vw, 18px);
+          line-height: 23px;
+          color: #202020;
+        }
+      }
+    }
+  }
+
+  //   Our staffs >>>>>>>>>>>>>>>>>>>>>>>>>>
+  .ourStaffsContainer {
+    min-height: fit-content !important;
+
+    .ourSrviceTxt {
+      font-family: "Inter", sans-serif;
+      font-style: normal;
+      font-weight: 700;
+      font-size: clamp(22.5px, 1.98vw, 30px);
+      line-height: 22px;
+      letter-spacing: -0.408px;
+      color: #000000;
+    }
+    .staffsCardContainer {
+      display: flex;
+      overflow: auto;
+      padding: 2rem 0px;
+      gap: 15px;
+
+      .staffItemContainer {
+        padding: 10px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        border-radius: 5px;
+        border: 1px solid #f2f2f2;
+        gap: 10px;
+        min-width: 150px;
+
+        .staffImg {
+          height: clamp(86.25px, 7.6vw, 115px);
+          object-fit: contain;
+          border-radius: 5px;
+        }
+        .staffName {
+          font-family: "Inter", sans-serif;
+          font-style: normal;
+          font-weight: 700;
+          font-size: clamp(13.5px, 1.19vw, 18px);
+          line-height: 22px;
+          letter-spacing: -0.408px;
+          color: #000000;
+        }
+        .staffAbout {
+          font-family: "Inter", sans-serif;
+          font-style: normal;
+          font-weight: 300;
+          font-size: clamp(11.25px, 1vw, 15px);
+          line-height: 22px;
+          letter-spacing: -0.408px;
+          color: #000000;
+        }
+      }
+    }
+  }
+
+  // portFolioContainer
+  .portFolioContainer {
+    max-height: max-content !important;
+    min-height: fit-content !important;
+
+    .ourSrviceTxt {
+      font-family: "Inter", sans-serif;
+      font-style: normal;
+      font-weight: 700;
+      font-size: clamp(22.5px, 1.98vw, 30px);
+      line-height: 22px;
+      letter-spacing: -0.408px;
+      color: #000000;
+    }
+    .imageParentContainer {
+      display: flex;
+      overflow: auto;
+      padding: 2rem 0px;
+      gap: 15px;
+
+      .imageItemContainer {
+        border-radius: 5px;
+        min-width: 150px;
+
+        .galleryImg {
+          height: clamp(112.5px, 9.92vw, 150px);
+          object-fit: contain;
+          border-radius: 5px;
+        }
+      }
+    }
+  }
+}
+
+// rightContainer
+.rightContainer {
+  position: sticky;
+  top: 75px;
+  display: flex;
+  flex-direction: column;
+  box-shadow: 0px 5px 5px 5px rgba(0, 0, 0, 0.15);
+
+  // businessdetails
+  .businessDetailsContainer {
+    min-height: fit-content !important;
+    box-shadow: none !important;
+
+    .ourSrviceTxt {
+      font-family: "Inter", sans-serif;
+      font-style: normal;
+      font-weight: 700;
+      font-size: clamp(22.5px, 1.98vw, 30px);
+      line-height: 22px;
+      letter-spacing: -0.408px;
+      color: #000000;
+      margin-bottom: 20px;
+    }
+
+    .dayContainer {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      margin-bottom: 5px;
+      gap: 20px;
+    }
+
+    .dayTxt {
+      font-family: "Inter", sans-serif;
+      font-style: normal;
+      font-weight: 500;
+      font-size: clamp(13.5px, 1.19vw, 18px);
+      line-height: 22px;
+      letter-spacing: -0.408px;
+      color: #000000;
+      white-space: nowrap;
+    }
+  }
+
+  // callContainer
+  .callContainer {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    min-height: fit-content !important;
+    box-shadow: none !important;
+    padding-top: 0px !important;
+
+    .ourSrviceTxt {
+      font-family: "Inter", sans-serif;
+      font-style: normal;
+      font-weight: 700;
+      font-size: clamp(22.5px, 1.98vw, 30px);
+      line-height: 22px;
+      letter-spacing: -0.408px;
+      color: #000000;
+    }
+
+    .dayTxt {
+      font-family: "Inter", sans-serif;
+      font-style: normal;
+      font-weight: 500;
+      font-size: clamp(13.5px, 1.19vw, 18px);
+      line-height: 22px;
+      letter-spacing: -0.408px;
+      color: #000000;
+    }
+  }
+
+  // Map container
+  .mapContainer {
+    padding-top: 0px !important;
+    min-height: fit-content !important;
+    box-shadow: none !important;
+
+    .mapImg {
+      width: 100%;
+      object-fit: contain;
+    }
+  }
+}
